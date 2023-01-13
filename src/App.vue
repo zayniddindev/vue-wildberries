@@ -1,26 +1,34 @@
+<script setup>
+import ProductList from './components/ProductList.vue'
+</script>
+
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ProductList />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ProductList
   }
 }
 </script>
 
 <style>
-#app {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  transition: 3ms;
+}
+
+#app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
